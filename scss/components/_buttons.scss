@@ -1,4 +1,3 @@
-
 .btn {
     @include transition;
     padding: 15px 30px;
@@ -26,7 +25,7 @@
     &-light {
         background: #fff;
         color: $color-dark-gray;
-        font-weight: bold;
+        
     }
     &-light:hover {
         background: $color-dark-gray;
@@ -35,7 +34,6 @@
 }
 
 .header-buttons {
-    
     margin-top: 40px;
 
     .btn-reserve {
@@ -66,7 +64,6 @@
             width: 40px;
             height: 40px;
         }
-        
     }
 
     .btn-watch:hover{
@@ -81,7 +78,6 @@
         background-color: $color-dark-gray;
     }
 }
-
 
 .icon-menu-closed
  {
