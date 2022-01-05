@@ -658,6 +658,101 @@ a {
   margin: 20px 0;
 }
 
+.contact {
+  background-color: #1ba4ce;
+}
+
+.contact h2,
+.contact p {
+  color: #fff;
+}
+
+.contact p {
+  opacity: 1;
+}
+
+.contact .contact-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+}
+
+.contact .contact-data .contact-data-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact .contact-data .contact-data-box .contact-data-icon {
+  width: 40px;
+  height: 25px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.contact .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 65%;
+}
+
+.contact .contact-us input,
+.contact .contact-us textarea {
+  width: 100%;
+  color: #fff;
+  border-radius: 0;
+}
+
+.contact .contact-us button {
+  margin-top: 25px;
+}
+
+.contact .contact-us .contact-form-input {
+  background: #1ba4ce;
+  color: #fff;
+  padding: 20px 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 19.2px;
+  text-transform: uppercase;
+}
+
+.contact .contact-us .contact-form-input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.contact .contact-us .contact-form-input:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .contact .contact-data,
+  .contact .contact-us {
+    width: 100%;
+  }
+}
+
 .btn {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -689,7 +784,6 @@ a {
 .btn-light {
   background: #fff;
   color: #30383b;
-  font-weight: bold;
 }
 
 .btn-light:hover {
@@ -868,7 +962,11 @@ section {
 
 .signup .news-form-input::-webkit-input-placeholder {
   color: #fff;
-  opacity: 0.5;
+  opacity: 1;
+}
+
+.signup .news-form-input:focus {
+  outline: none;
 }
 
 .signup .form-border-red {
