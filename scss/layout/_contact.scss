@@ -1,10 +1,71 @@
 .contact {
     background-color: $color-blue;
     h2,
+
     p {
         color: #fff;
     }
+
     p {
         opacity: 1;
+    }
+
+    .contact-data {
+        @include flex;
+        align-items: center;
+        width: 35%;
+        
+        .contact-data-box {
+            @include flex;
+            align-items: center;
+            text-align: left;
+            text-transform: uppercase;
+            
+            .contact-data-icon {
+                width: 40px;
+                height: 25px;
+                margin-right: 20px;
+                text-align: center;
+            }
+        }
+    }
+    
+    .contact-us {
+        @include flex;
+        flex-direction: row;
+        width: 65%;
+
+        input,
+        textarea {
+            width: 100%;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        button {
+            margin-top: 25px;
+        }
+
+        .contact-form-input {
+            @include formInput;
+        }
+        .contact-form-input::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+
+        .contact-form-input:focus {
+            outline: none;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        .contact-data,
+        .contact-us {
+            width: 100%;
+        }
     }
 }
