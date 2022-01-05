@@ -10,7 +10,6 @@
         color: #fff;
     }
 
-
     #msg {
         width: 100%;
         margin: 50px 0;
@@ -18,18 +17,16 @@
     }
 
     .news-form-input {
-        background: $color-blue;
-        color: #fff;
-        padding: 20px 10px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        font-size: $base-font-size * 1.2;
-        text-transform: uppercase;
+        @include formInput;
     }
 
     .news-form-input::-webkit-input-placeholder { 
         color: #fff;
-        opacity: 0.5;
+        opacity: 1;
+    }
+
+    .news-form-input:focus{
+        outline: none;
     }
 
     .form-border-red {
@@ -54,8 +51,6 @@
 }
 
 @media screen and (max-width: 992px) {
-
-
     .signup {
         padding: 30px;
         input,
