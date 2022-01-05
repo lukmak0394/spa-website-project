@@ -10,3 +10,13 @@
 @mixin transition {
     transition: all 0.3s;
 }
+
+@mixin formInput {
+    background: $color-blue;
+    color: #fff;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: $base-font-size * 1.2;
+    text-transform: uppercase;
+}
