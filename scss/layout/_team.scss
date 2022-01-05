@@ -1,0 +1,43 @@
+.crew {
+
+    h3 {
+        font-family: $font-bellota;
+        color: $color-violet;
+    }
+
+    p {
+        color: $color-dark-gray;
+        opacity: 0.5;
+    }
+
+    img {
+        height: 90%;
+    }
+
+    .team-info {
+        @include transition;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -50px;
+        padding: 10px 0;
+        width: 80%;
+        background: #fff;
+    }
+
+    .team-info:hover {
+        bottom: 0;
+        box-shadow: 0 5px 20px #f0f0f0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .crew {
+        h3,
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+}

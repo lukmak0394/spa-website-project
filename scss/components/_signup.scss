@@ -1,0 +1,55 @@
+.signup {
+    @include flex;
+    justify-content: space-between;
+    padding: 60px;
+
+    input,
+    select {
+        width: 49%;
+    }
+
+    #msg {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .news-form-input {
+        background: $color-blue;
+        color: #fff;
+        padding: 20px 10px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-size: $base-font-size * 1.2;
+        text-transform: uppercase;
+    }
+    .form-border-red {
+        border: none;
+        border-bottom: 1px solid red;
+    }
+
+    .msg-error {
+        color: red;
+        font-weight: 700;
+        font-style: italic;
+        width: 100%;
+        text-align: left;
+    }
+
+    .msg-success {
+        color: #fff;
+        font-weight: 700;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .signup {
+        input,
+        select {
+            width: 100%;
+        }
+    }
+}

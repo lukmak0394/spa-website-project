@@ -1,0 +1,121 @@
+
+.btn {
+    @include transition;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    display: inline-block;
+
+    &-blue {
+        background: $color-blue;
+    }
+    &-blue:hover {
+        background: $color-dark-gray;
+    }
+
+    &-dark {
+        background: $color-dark-gray;
+    }
+    &-dark:hover {
+        background: $color-blue;
+    }
+
+    &-light {
+        background: #fff;
+        color: $color-dark-gray;
+        font-weight: bold;
+    }
+    &-light:hover {
+        background: $color-dark-gray;
+        color: #fff;
+    }
+}
+
+.header-buttons {
+    
+    margin-top: 40px;
+
+    .btn-reserve {
+        @include transition;
+        font-size: $base-font-size;
+        padding: 15px 25px;
+        margin-right: 10px;
+    }
+
+    .btn-reserve {
+        background-color: $color-blue;
+        color: #fff;
+        display: inline-block;
+    }
+
+    .btn-watch {
+        display: inline-block;
+        color: $color-dark-gray;
+
+        i {
+            @include transition;
+            margin-right: 6px;
+            border-radius: 50%;
+            color: $color-violet;
+            border: 1px solid $color-violet;
+            text-align: center;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+
+    .btn-watch:hover{
+        color: $color-blue;
+    }
+    .btn-watch:hover i{
+        border: 1px solid $color-blue;
+        color: $color-blue;
+    }
+    
+    .btn-reserve:hover {
+        background-color: $color-dark-gray;
+    }
+}
+
+
+.icon-menu-closed
+ {
+    display: none;
+    border: none;
+    background: transparent;
+}
+
+.icon-menu-closed {
+    color: $color-blue;
+
+    .fa-times {
+        color: #fff;
+    }
+}
+
+.social-btn {
+    display: inline-block;
+    color: $color-dark-gray;
+
+    i {
+        @include transition;
+        margin-right: 6px;
+        border-radius: 50%;
+        border: 1px solid $color-violet;
+        text-align: center;
+        line-height: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    i:hover{
+        border: 1px solid $color-blue;
+        background: $color-blue;
+        color: #fff;
+    }
+}

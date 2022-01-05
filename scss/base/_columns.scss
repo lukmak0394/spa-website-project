@@ -1,0 +1,31 @@
+.row {
+    @include flex;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .col-sm-1 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .col-sm-4 {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-4 {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-3 {
+        width: 25%;
+    }
+
+}
+

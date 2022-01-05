@@ -1,0 +1,19 @@
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 42px;
+    font-family: $font-bellota;
+    color: $color-violet;
+}
+
+.section-description {
+    color: $color-dark-gray;
+    opacity: 0.5;
+    font-weight: 300;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 40px;
+}

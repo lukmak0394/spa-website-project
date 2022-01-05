@@ -1,0 +1,74 @@
+// Header styling
+.main-header {
+    @include flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 90vh;
+    
+    .header-bg-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 40%;
+        z-index: 5;
+        display: block;
+    }
+
+    .header-flowers-img {
+        position: absolute;
+        left: 0;
+        top: 35%;
+        max-width: 25%;
+        max-height: 25%;
+        z-index: -2;
+    }
+
+    .header-content {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: $base-font-size * 3.125;
+        color: $color-dark-gray;
+        font-family: $font-bellota;
+    }
+
+    p:first-of-type {
+        font-family: $font-bellota;
+        font-size: $base-font-size * 1.2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p:nth-of-type(2) {
+        color: $color-dark-gray;
+        opacity: 0.9;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .main-header {
+        .header-content {
+            width: 100%;
+        }
+        .header-bg-img {
+            display: none;
+        }
+        .header-flowers-img {
+            width: 10%;
+            height: 10%;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .main-header {
+        .header-bg-img {
+            width: 30%;
+            height: 40%;
+        }
+    }
+}

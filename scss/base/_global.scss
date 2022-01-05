@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-roboto;
+    font-size: $base-font-size;
+}
+    
+ul {
+    list-style: none;
+}
+    
+img {
+    height: 100%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+p,
+input,
+button {
+    font-size: $base-font-size;
+}  
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 23px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+

@@ -1,0 +1,12 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: all 0.3s;
+}

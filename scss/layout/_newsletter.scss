@@ -1,0 +1,40 @@
+.newsletter {
+    @include flex;
+    
+    .newsletter-img {
+        // Czemu nie zadziałało ustawienie bg image tutaj?
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 40%;
+    }
+
+
+    .signup {
+        width: 60%;
+        background: $color-blue;
+    }
+
+    .msg-to-user {
+        width: 100%;
+        text-align: left;
+        font-weight: bold;
+        color: #fff;
+    }
+    .msg-to-user-red {
+        color: red;
+    }
+   
+}
+
+@media screen and (max-width: 992px) {
+    .newsletter {
+        .newsletter-img {
+            display: none;
+        }
+        .signup {
+            width: 100%;
+        }
+    }
+    
+}
