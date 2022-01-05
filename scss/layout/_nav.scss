@@ -72,9 +72,10 @@
                 padding: 5px 0;
                 font-size: $base-font-size * 2.5;
             } 
-            .nav-link:hover {
-                color: $color-violet;
-            }
+        }
+
+        .nav-link:hover {
+            color: $color-violet;
         }
         
         .icon-menu-closed {
