@@ -38,15 +38,15 @@ signUp.addEventListener('submit',function(event) {
             document.querySelector('.msg-to-user').classList.add('msg-to-user-red');
 
             // Make form fields more interactive - after trying to submit wrong filled form where empty fields have red border, when focused on input - make its' border white. When input loose focus and its; filled in - make border white. When loose focus and value is empty - make border red again.
-            // formFields[i].addEventListener('focus',function() {
-            //     formFields[i].classList.remove('form-border-red');
-            // })
+            formFields[i].addEventListener('focus',function() {
+                formFields[i].classList.remove('form-border-red');
+            })
     
-            // formFields[i].addEventListener('blur',function() {
-            //     if(formFields[i].value.trim() === '') {
-            //         formFields[i].classList.add('form-border-red');
-            //     }
-            // })
+            formFields[i].addEventListener('blur',function() {
+                if(formFields[i].value.trim() === '') {
+                    formFields[i].classList.add('form-border-red');
+                }
+            })
 
         }
     }
