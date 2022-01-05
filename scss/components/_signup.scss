@@ -7,7 +7,9 @@
     select {
         width: 49%;
         border-radius: 0;
+        color: #fff;
     }
+
 
     #msg {
         width: 100%;
@@ -24,6 +26,12 @@
         font-size: $base-font-size * 1.2;
         text-transform: uppercase;
     }
+
+    .news-form-input::-webkit-input-placeholder { 
+        color: #fff;
+        opacity: 0.5;
+    }
+
     .form-border-red {
         border: none;
         border-bottom: 1px solid red;
