@@ -30,9 +30,6 @@
             font-weight: 700;
             transition: all 0.3s;
         }
-        .nav-link:hover {
-            color: $color-blue;
-        }
     }
 }
 
@@ -72,10 +69,6 @@
                 padding: 5px 0;
                 font-size: $base-font-size * 2.5;
             } 
-        }
-
-        .nav-link:hover {
-            color: $color-violet;
         }
         
         .icon-menu-closed {
