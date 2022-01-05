@@ -402,7 +402,10 @@ a {
     width: 100%;
     display: inline-block;
     padding: 5px 0;
-    font-size: 48px;
+    font-size: 40px;
+  }
+  .main-nav .navbar-visible .nav-link:hover {
+    color: #473452;
   }
   .main-nav .icon-menu-closed {
     display: block;
@@ -843,11 +846,13 @@ section {
 .signup input,
 .signup select {
   width: 49%;
+  border-radius: 0;
 }
 
 .signup #msg {
   width: 100%;
   margin: 50px 0;
+  border-radius: 0;
 }
 
 .signup .news-form-input {
