@@ -1,0 +1,34 @@
+.footer {
+
+    img {
+        max-width: 120px;
+    }
+
+    .navbar-nav {
+        @include flex;
+        @include flex-center;
+        margin-top: 20px;
+        padding: 0;
+        
+        .nav-item {
+            padding: 15px 20px;
+            margin: 5px;
+        }
+        .nav-link {
+            color: $color-violet;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: $color-blue;
+        }
+    }
+
+    .copyright {
+        color: $color-dark-gray;
+        opacity: 0.5;
+        text-transform: uppercase;
+    }
+}
+
