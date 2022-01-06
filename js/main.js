@@ -104,4 +104,4 @@ function sendData() {
     .catch((error) => {
         console.error('Error:', error);
     });
-}
+}w
