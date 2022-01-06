@@ -19,15 +19,35 @@ iconMenuClosed.addEventListener('click',function(){
 
 const formFields = document.querySelectorAll('.news-form-input');
 
+// Funciton removing red border when specific form field get focus
+function actLikeNormal(event) {
+    for (let i = 0; i < formFields.length; i++) {
+        event.target.classList.remove('form-border-red');
+    }
+}
+
+// Function adding red border when specific form field looses focus and its' value is blank
+function actLikeError(event) {
+    for (let i = 0; i < formFields.length; i++) {
+        if(event.target.value.trim() === '') {
+            event.target.classList.add('form-border-red');
+        }
+    }
+}
+// In both of functions above iteraded throug all form fields, hoverver used event.target cause i'd like to add or remove border to specific field, not to all fields.
+
 const signUp = document.querySelector('.signup');
 signUp.addEventListener('submit',function(event) {
     event.preventDefault();
 
     errors = 0;
    
-
     // Check if all form fields are filled in
     for (let i = 0; i < formFields.length; i++) {
+        // Added event listener on each form field
+        formFields[i].addEventListener('focus',actLikeNormal);
+        formFields[i].addEventListener('blur',actLikeError);
+
         if(formFields[i].value.trim() === '') {
             formFields[i].classList.add('form-border-red');
             
@@ -36,18 +56,7 @@ signUp.addEventListener('submit',function(event) {
             // Display error msg, make borders red
             document.querySelector('.msg-to-user').innerText = "Please fill in all required fields";
             document.querySelector('.msg-to-user').classList.add('msg-to-user-red');
-
-            // Make form fields more interactive - after trying to submit wrong filled form where empty fields have red border, when focused on input - make its' border white. When input loose focus and its; filled in - make border white. When loose focus and value is empty - make border red again.
-            formFields[i].addEventListener('focus',function() {
-                formFields[i].classList.remove('form-border-red');
-            })
-    
-            formFields[i].addEventListener('blur',function() {
-                if(formFields[i].value.trim() === '') {
-                    formFields[i].classList.add('form-border-red');
-                }
-            })
-
+            
         }
     }
     if (errors === 0) {
@@ -80,14 +89,19 @@ function sendData() {
     })
     .then(res => res.json())
     .then(data => {
+        // Show msg informing that user have been signed up to newsletter
         document.querySelector('.msg-to-user').innerText = `Thank you ${data.appointment.name}. You have been successfully signed up to our newsletter.`;
         for (let i = 0; i < formFields.length; i++) {
+            // Set value of each field to blank
             formFields[i].value = '';
+            // Remove red border of each field
             formFields[i].classList.remove('form-border-red');
+            // Remove event listeners
+            formFields[i].removeEventListener('focus',actLikeNormal);
+            formFields[i].removeEventListener('blur',actLikeError);
         }
     })
     .catch((error) => {
         console.error('Error:', error);
     });
- 
 }
