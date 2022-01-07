@@ -90,7 +90,7 @@ function sendData() {
     .then(res => res.json())
     .then(data => {
         // Show msg informing that user have been signed up to newsletter
-        document.querySelector('.msg-to-user').innerText = `Thank you ${data.appointment.name}. You have been successfully signed up to our newsletter.`;
+        document.querySelector('.msg-to-user').innerText = `Thank you ${data.appointment.name}. You have been appointed successfully.`;
         for (let i = 0; i < formFields.length; i++) {
             // Set value of each field to blank
             formFields[i].value = '';
