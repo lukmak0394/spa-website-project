@@ -598,7 +598,7 @@ a {
   }
 }
 
-.newsletter {
+.appointment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,34 +606,34 @@ a {
       flex-wrap: wrap;
 }
 
-.newsletter .newsletter-img {
+.appointment .appointment-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 40%;
 }
 
-.newsletter .signup {
+.appointment .signup {
   width: 60%;
   background: #1ba4ce;
 }
 
-.newsletter .msg-to-user {
+.appointment .msg-to-user {
   width: 100%;
   text-align: left;
   font-weight: bold;
   color: #fff;
 }
 
-.newsletter .msg-to-user-red {
+.appointment .msg-to-user-red {
   color: red;
 }
 
 @media screen and (max-width: 992px) {
-  .newsletter .newsletter-img {
+  .appointment .appointment-img {
     display: none;
   }
-  .newsletter .signup {
+  .appointment .signup {
     width: 100%;
   }
 }
