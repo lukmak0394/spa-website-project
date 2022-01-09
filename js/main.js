@@ -10,7 +10,6 @@ iconMenuClosed.addEventListener('click',function(){
     if (navBar.classList.contains('navbar-visible')) {
         iconMenuClosedInner.classList.remove('fa-bars');
         iconMenuClosedInner.classList.add('fa-times')
-        console.log(iconMenuClosedInner)
     } else {
         iconMenuClosedInner.classList.remove('fa-times');
         iconMenuClosedInner.classList.add('fa-bars');
@@ -104,4 +103,4 @@ function sendData() {
     .catch((error) => {
         console.error('Error:', error);
     });
-}w
+}
